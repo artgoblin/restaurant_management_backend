@@ -5,15 +5,17 @@ public class foodModel {
 			private String food_item;
 			private int price;
 			private int serving;
+			private int table_no;
 			public foodModel() {
 				super();
 			}
-			public foodModel(String Sl_no,String food_item, int price,int serving) {
+			public foodModel(String Sl_no,String food_item, int price,int serving,int table_no) {
 				super();
 				this.Sl_no=Sl_no;
 				this.food_item = food_item;
 				this.price = price;
 				this.serving=serving;
+				this.table_no=table_no;
 				
 			}
 			public String getSl_no() {
@@ -43,6 +45,12 @@ public class foodModel {
 			}
 			public void setserving(int serving) {
 				this.serving=serving;
+			}
+			public int gettableno(int table_no) {
+				return table_no;
+			}
+			public void settableno(int table_no) {
+				this.table_no=table_no;
 			}
 
 }
