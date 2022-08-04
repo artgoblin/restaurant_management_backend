@@ -6,16 +6,18 @@ public class foodModel {
 			private int price;
 			private int serving;
 			private int table_no;
+			private String notes;
 			public foodModel() {
 				super();
 			}
-			public foodModel(String Sl_no,String food_item, int price,int serving,int table_no) {
+			public foodModel(String Sl_no,String food_item, int price,int serving,int table_no,String notes) {
 				super();
 				this.Sl_no=Sl_no;
 				this.food_item = food_item;
 				this.price = price;
 				this.serving=serving;
 				this.table_no=table_no;
+				this.notes=notes;
 				
 			}
 			public String getSl_no() {
@@ -51,6 +53,13 @@ public class foodModel {
 			}
 			public void settableno(int table_no) {
 				this.table_no=table_no;
+			}
+			
+			public String getnotes(String notes) {
+				return notes;
+			}
+			public void setnotes(String notes) {
+				this.notes=notes;
 			}
 
 }

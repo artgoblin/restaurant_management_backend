@@ -62,7 +62,8 @@ public class FoodCurd extends HttpServlet {
 					pojo.setFood_item(result.getString(2));
 					pojo.setPrice(result.getInt(3));
 					pojo.setserving(result.getInt(4));
-					pojo.settableno(result.getInt(5));					
+					pojo.settableno(result.getInt(5));	
+					pojo.setnotes(result.getString(6));	
 					
 					data.add(pojo);
 				}

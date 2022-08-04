@@ -64,6 +64,8 @@ public class SearchOrder extends HttpServlet {
 				inv.setFood_item(rs.getString("food_item"));
 				inv.setPrice(rs.getInt("price"));	
 				inv.setserving(rs.getInt("serving"));
+				inv.settableno(rs.getInt("table_no"));
+				inv.setnotes(rs.getString("notes"));
 				data.add(inv);
 			}
 			
